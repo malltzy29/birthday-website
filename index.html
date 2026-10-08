@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Untuk Aul 💙</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .judul {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#071a2e] text-white">
+    <!-- MUSIK BACKGROUND -->
+    <audio id="bgMusic" autoplay loop preload="auto">
+        <source src="music/lagu.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutar audio.
+    </audio>
+
+    <button
+        id="musicButton"
+        onclick="toggleMusic()"
+        class="fixed bottom-6 right-6 z-50 bg-blue-500/90 hover:bg-blue-400 text-white text-sm px-5 py-3 rounded-full shadow-lg backdrop-blur transition duration-300"
+    >
+        🎵 Nyalakan Musik
+    </button>
+
+    <main class="min-h-screen flex items-center justify-center px-6">
+
+        <div class="text-center max-w-xl fade-in">
+
+            <p class="text-blue-300 text-sm tracking-[0.25em] uppercase mb-6">
+                sedikit sesuatu untuk kamu
+            </p>
+
+            <h1 class="judul text-4xl md:text-5xl md:text-7xl mb-6">
+                Hai, Aul.
+            </h1>
+
+            <p class="text-blue-100/70 text-base md:text-lg leading-relaxed mb-10">
+                Mungkin ini bukan sesuatu yang besar, tapi aku bikin ini khusus buat seseorang yang berarti buat aku.
+            </p>
+
+            <button
+                onclick="mulaiCerita()"
+                class="border border-blue-300/40 px-7 py-3 rounded-full
+                       text-sm hover:bg-blue-300 hover:text-[#071a2e]
+                       transition duration-300">
+                buka pelan-pelan →
+            </button>
+
+        </div>
+
+    </main>
+<!-- SECTION 2 -->
+<section id="cerita" class="min-h-screen bg-[#f4f8fc] text-[#071a2e] flex items-center px-6 py-12 md:py-24">
+    <div class="max-w-2xl mx-auto">
+
+        <p class="text-blue-500 text-sm tracking-[0.25em] uppercase mb-6">
+            buat kamu, Aul
+        </p>
+
+        <h2 class="judul text-4xl md:text-5xl leading-tight mb-8">
+            Aku mau cerita sedikit.
+        </h2>
+
+        <div class="space-y-5 text-[#526579] leading-8 text-base md:text-lg">
+
+            <p>
+                Aku sebenernya nggak terlalu jago buat ngomongin
+                hal-hal kayak gini secara langsung.
+            </p>
+
+            <p>
+                Jadi kali ini Aku coba nyampeinnya lewat sesuatu
+                yang bisa kamu baca pelan-pelan.
+            </p>
+
+            <p>
+                Karena hari ini bukan cuma tentang ulang tahun kamu.
+                Tapi tentang bersyukur karena pernah dipertemukan
+                sama seseorang seperti kamu.
+            </p>
+
+        </div>
+
+        <div class="mt-12">
+            <button
+                onclick="scrollKeMemory()"
+                class="text-blue-600 border-b border-blue-300 pb-1
+                       hover:border-blue-600 transition">
+                lanjut sedikit →
+            </button>
+        </div>
+
+    </div>
+
+</section>
+<!-- SECTION 3 -->
+<section id="memory" class="min-h-screen bg-[#071a2e] text-white px-6 py-24">
+
+    <div class="max-w-5xl mx-auto">
+
+        <div class="max-w-2xl mb-16">
+
+            <p class="text-blue-300 text-sm tracking-[0.25em] uppercase mb-5">
+                beberapa hal kecil
+            </p>
+
+            <h2 class="judul text-4xl md:text-5xl leading-tight mb-6">
+                Tentang kita, pelan-pelan.
+            </h2>
+
+            <p class="text-blue-100/60 leading-8">
+                Nggak semua momen harus besar untuk bisa diingat.
+                Kadang justru hal-hal kecil yang akhirnya paling susah dilupain.
+            </p>
+
+        </div>
+
+
+        <!-- MEMORY 1 -->
+       <div class="grid md:grid-cols-2 gap-10 items-center mb-24 opacity-0 translate-y-6 transition-all duration-1000">
+            <img
+    src="images/roblox.jpg"
+    alt="Awal cerita kita"
+    class="w-full h-72 object-cover object-center rounded-2xl transition-transform duration-500 hover:scale-[1.02]"
+>
+
+            <div>
+                <p class="text-blue-300 text-sm mb-3">
+    01 — awal cerita
+</p>
+
+<h3 class="judul text-3xl mb-5">
+    Semuanya dimulai dari Roblox.
+</h3>
+
+<p class="text-blue-100/60 leading-8">
+    Awalnya kita cuma dua orang yang ketemu di sebuah game.
+    Cuma main, ngobrol, dan foto bareng di Roblox.
+    Tapi siapa sangka, dari sesuatu yang sesederhana itu,
+    akhirnya muncul cerita yang sampai sekarang masih aku jalanin.
+</p>
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY 2 -->
+        <div class="grid md:grid-cols-2 gap-10 items-center mb-24 opacity-0 translate-y-6 transition-all duration-1000">
+
+            <img
+    src="images/real-life-1.jpg"
+    alt="Kenangan kita"
+    class="w-full h-72 object-cover object-center rounded-2xl transition-transform duration-500 hover:scale-[1.02] md:order-2"
+>
+
+            <div class="md:order-1">
+                <p class="text-blue-300 text-sm mb-3">
+    02 — dari layar ke dunia nyata
+</p>
+
+<h3 class="judul text-3xl mb-5">
+    Ternyata kamu beneran ada di sini.
+</h3>
+
+<p class="text-blue-100/60 leading-8">
+    Yang awalnya cuma bisa aku lihat lewat layar,
+    akhirnya bisa gue temui secara langsung.
+    Rasanya agak lucu kalau inget awalnya kita cuma
+    kenal dari Roblox, terus akhirnya bisa foto bareng
+    di dunia nyata.
+</p>
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY 3 -->
+        <div class="grid md:grid-cols-2 gap-10 items-center opacity-0 translate-y-6 transition-all duration-1000">
+            <img
+    src="images/real-life-2.jpg"
+    alt="Kenangan kita"
+    class="w-full h-72 object-cover object-center rounded-2xl transition-transform duration-500 hover:scale-[1.02]"
+>
+
+            <div>
+                <p class="text-blue-300 text-sm mb-3">
+    03 — sejauh ini
+</p>
+
+<h3 class="judul text-3xl mb-5">
+    Dan ternyata, kita masih disini.
+</h3>
+
+<p class="text-blue-100/60 leading-8">
+    Dari yang awalnya cuma kenal lewat game,
+    sampai akhirnya punya foto bareng di dunia nyata.
+    Banyak hal yang udah kita lewatin,
+    dan aku masih senang karena sampai sekarang
+    ceritanya belum selesai.
+</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- SECTION 4 -->
+<section
+    id="surat"
+    class="min-h-screen bg-[#f4f8fc] text-[#071a2e] px-6 py-24"
+>
+
+    <div class="max-w-3xl mx-auto w-full">
+
+        <!-- JUDUL -->
+        <div class="text-center mb-14">
+
+            <p class="text-blue-500 text-sm tracking-[0.25em] uppercase mb-5">
+                buat Aul
+            </p>
+
+            <h2 class="judul text-4xl md:text-6xl leading-tight">
+                Ada satu hal yang mau aku bilang.
+            </h2>
+
+        </div>
+
+
+        <!-- KARTU SURAT -->
+        <div class="bg-white border border-blue-100 rounded-2xl p-8 md:p-12 shadow-sm opacity-0 translate-y-6 transition-all duration-1000">
+
+            <p class="text-slate-500 text-sm mb-8">
+                10 Desember
+            </p>
+
+
+            <div class="space-y-6 text-slate-600 leading-8 text-base md:text-lg">
+
+                <p>
+                    Hai, Aul.
+                </p>
+
+                <p>
+                    Kalau dipikir-pikir, lucu juga ya gimana awal kita bisa ketemu.
+                </p>
+
+                <p>
+                    Aku masih inget, walaupun bulannya antara Maret atau April
+                    dan aku sendiri udah lupa tepatnya kapan wkwkwk.
+                    Waktu itu kita ketemu di map Roblox
+                    <span class="text-slate-800 font-medium">
+                        "Hutan Map Voice"
+                    </span>.
+                </p>
+
+                <p>
+                    Awalnya aku cuma iseng manggil kamu.
+                    Nggak nyangka ternyata kamu malah nyamperin aku,
+                    terus dari situ kita mulai ngobrol dan saling kenalan.
+                </p>
+
+                <p>
+                    Dari obrolan itu aku baru tahu kalau kamu orang Bandung,
+                    punya adek, dan yang paling bikin aku ngakak...
+                    nama adek kamu ternyata Akmal juga.
+                    Sama kayak aku. Wkwkwk, kebetulan yang aneh banget.
+                </p>
+
+                <p>
+                    Mungkin dari luar kelihatannya sederhana.
+                    Cuma dua orang yang ketemu di game,
+                    ngobrol, bercanda, terus makin sering ngobrol.
+                </p>
+
+                <p>
+                    Tapi ternyata dari situ semuanya mulai.
+                </p>
+
+                <p>
+                    Salah satu hal yang bikin aku suka sama kamu
+                    adalah karena jokes kita nyambung.
+                    Kamu orangnya humoris, suka ketawa sama jokes aku,
+                    dan entah kenapa ngobrol sama kamu selalu terasa gampang.
+                </p>
+
+                <p>
+                    Ditambah lagi...
+                    kamu cantik, imut, dan lucu.
+                    Jadi ya, makin susah buat aku nggak suka sama kamu. Wkwkwk.
+                </p>
+
+                <p>
+                    Tapi dari semua hal yang aku inget,
+                    ada satu momen yang sampai sekarang paling aku inget.
+                </p>
+
+                <p>
+                    Waktu kita ketemu sebelum aku berangkat ke Bali,
+                    dan kamu peluk aku sebelum akhirnya kita harus LDR lagi.
+                </p>
+
+                <p>
+                    Mungkin buat kamu itu cuma pelukan biasa.
+                    Tapi buat aku, itu salah satu momen yang bakal aku simpan lama.
+                </p>
+
+                <p>
+                    Dan sekarang, di hari ulang tahun kamu,
+                    aku cuma mau bilang:
+                </p>
+
+                <p>
+                    <strong>
+                        Makasih udah nemenin aku selama ini.
+                    </strong>
+                </p>
+
+                <p>
+                    Makasih udah nerima aku apa adanya.
+                    Makasih karena masih bertahan sama hubungan ini
+                    sampai sekarang.
+                </p>
+
+                <p>
+                    Aku tahu perjalanan kita nggak selalu gampang,
+                    tapi aku senang karena sampai hari ini
+                    kita masih punya cerita buat dilanjutin.
+                </p>
+
+                <p>
+                    Selamat ulang tahun, Aul.
+                </p>
+
+                <p>
+                    Semoga di umur yang baru ini banyak hal baik datang
+                    ke hidup kamu.
+                    Semoga kamu selalu punya alasan buat senyum,
+                    dan semoga semua yang kamu pengen pelan-pelan
+                    bisa tercapai.
+                </p>
+
+                <p>
+                    Dan semoga...
+                    cerita yang awalnya cuma dimulai dari Roblox ini
+                    masih punya banyak halaman lagi.
+                </p>
+
+            </div>
+
+
+            <!-- PENUTUP SURAT -->
+            <div class="mt-12 pt-8 border-t border-slate-100">
+
+                <p class="judul italic text-2xl text-[#071a2e]">
+                    I love you. 💙
+                </p>
+
+                <p class="text-slate-400 text-sm mt-4">
+                    — Mal
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOMBOL -->
+        <div class="text-center mt-12">
+
+            <button
+                onclick="scrollKeSurprise()"
+                class="text-blue-600 border-b border-blue-300 pb-1
+                       hover:border-blue-600 transition"
+            >
+                masih ada satu lagi →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- SECTION 5 - SURPRISE -->
+<section
+    id="surprise"
+    class="min-h-screen bg-[#071a2e] text-white flex items-center justify-center px-6 py-24"
+>
+
+    <div class="max-w-3xl mx-auto w-full text-center">
+
+        <p class="text-blue-300 text-sm tracking-[0.25em] uppercase mb-8">
+            satu hal terakhir
+        </p>
+
+        <h2 class="judul text-4xl md:text-6xl leading-tight mb-8">
+            Buat kamu,<br>
+            Aul. 💙
+        </h2>
+
+        <p class="text-blue-100/60 leading-8 max-w-2xl mx-auto mb-10">
+            Setelah semua cerita yang tadi kamu baca,
+            ternyata masih ada satu hal kecil yang pengen aku kasih.
+        </p>
+
+        <button
+            onclick="bukaSurprise()"
+            id="tombolSurprise"
+            class="border border-blue-300/40 px-8 py-3 rounded-full
+                   text-sm hover:bg-blue-300 hover:text-[#071a2e]
+                   transition duration-300"
+        >
+            buka yang terakhir →
+        </button>
+
+
+        <!-- ISI SURPRISE -->
+        <div
+    id="pesanSurprise"
+    class="mt-16 opacity-0 translate-y-5 transition-all duration-1000 pointer-events-none"
+>
+
+            <div class="w-full max-w-md mx-auto mb-10">
+
+                <img
+                    src="images/real-life-2.jpg"
+                    alt="Kenangan kita"
+                    class="w-full rounded-2xl shadow-2xl"
+                >
+
+            </div>
+
+
+            <div class="w-16 h-px bg-blue-300/40 mx-auto mb-8"></div>
+
+
+            <p class="judul italic text-2xl md:text-3xl text-blue-100 leading-relaxed">
+                "Makasih udah jadi bagian dari cerita aku
+                sampai sejauh ini."
+            </p>
+
+            <p class="text-blue-100/60 leading-8 mt-6 max-w-xl mx-auto">
+                Semoga setelah ini masih ada banyak tempat
+                yang bisa kita datengin, banyak hal yang bisa
+                kita ceritain, dan banyak momen yang bisa
+                kita simpan bareng.
+            </p>
+
+            <div class="mt-10">
+
+                <p class="judul text-3xl text-white">
+                    Happy Birthday, Aul. 💙
+                </p>
+
+                <p class="text-blue-100/40 text-sm mt-4">
+                    — Mal
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- MUSIK SCRIPT -->
+    <script>
+        const bgMusic = document.getElementById("bgMusic");
+        const musicButton = document.getElementById("musicButton");
+
+        function musikNyala() {
+            musicButton.textContent = "🔊 Musik Menyala";
+        }
+
+        function musikMati() {
+            musicButton.textContent = "🔇 Musik Mati";
+        }
+
+        function mulaiMusik() {
+            bgMusic.volume = 1;
+
+            bgMusic.play()
+                .then(() => {
+                    musikNyala();
+                })
+                .catch(() => {
+                    musicButton.textContent = "🎵 Klik untuk Nyalakan Musik";
+                });
+        }
+
+        function toggleMusic() {
+            if (bgMusic.paused) {
+                bgMusic.play()
+                    .then(() => {
+                        musikNyala();
+                    })
+                    .catch(() => {
+                        musicButton.textContent = "🎵 Klik untuk Nyalakan Musik";
+                    });
+            } else {
+                bgMusic.pause();
+                musikMati();
+            }
+        }
+
+        // Coba autoplay saat halaman selesai dimuat.
+        window.addEventListener("load", mulaiMusik);
+
+        // Kalau browser memblokir autoplay, interaksi pertama di halaman
+        // akan langsung mencoba menyalakan musik.
+        ["click", "touchstart", "keydown"].forEach((eventName) => {
+            document.addEventListener(eventName, () => {
+                if (bgMusic.paused) {
+                    bgMusic.play()
+                        .then(() => {
+                            musikNyala();
+                        })
+                        .catch(() => {});
+                }
+            }, { once: true });
+        });
+
+        bgMusic.addEventListener("play", musikNyala);
+        bgMusic.addEventListener("pause", musikMati);
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
